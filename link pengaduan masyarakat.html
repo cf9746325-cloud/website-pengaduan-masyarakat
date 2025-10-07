@@ -1,0 +1,58 @@
+<html>
+    <head></head>
+    <body>
+        <!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pengaduan Kesehatan Masyarakat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Pengaduan Kesehatan Masyarakat</h1>
+    <p>Sampaikan keluhan atau masalah kesehatan di lingkungan Anda</p>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Formulir Pengaduan</h2>
+      <form id="formPengaduan">
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <label for="email">Email (opsional):</label>
+        <input type="email" id="email" name="email">
+
+        <label for="lokasi">Lokasi Kejadian:</label>
+        <input type="text" id="lokasi" name="lokasi" required>
+
+        <label for="jenis">Jenis Pengaduan:</label>
+        <select id="jenis" name="jenis" required>
+          <option value="">-- Pilih Jenis --</option>
+          <option value="lingkungan">Kesehatan Lingkungan</option>
+          <option value="pelayanan">Pelayanan Kesehatan</option>
+          <option value="fasilitas">Fasilitas Kesehatan</option>
+          <option value="lainnya">Lainnya</option>
+        </select>
+
+        <label for="deskripsi">Deskripsi Keluhan:</label>
+        <textarea id="deskripsi" name="deskripsi" rows="5" required></textarea>
+
+        <button type="submit">Kirim Pengaduan</button>
+        <p id="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Dinas Kesehatan Masyarakat</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+    </body>
+</html>
